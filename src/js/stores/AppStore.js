@@ -12,7 +12,7 @@ var AppStore = assign({}, EventEmitter.prototype, {
 });
 
 AppDispatcher.register(function(payload){
-  console.log(payload);
+  console.log(payload.action.item);
   return true;
 });
 

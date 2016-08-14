@@ -7,6 +7,12 @@ var AppActions = {
       actionType:AppConstants.ADD_ITEM,
       item: item
     })
+  },
+  partyHard: function(message){
+    AppDispatcher.handleViewAction({
+      actionType:AppConstants.PARTY_HARD,
+      item: message
+    })
   }
 }
 
